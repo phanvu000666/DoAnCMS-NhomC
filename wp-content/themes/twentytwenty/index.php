@@ -84,13 +84,8 @@ get_header();
 
 		while (have_posts()) {
 			$i++;
-<<<<<<< HEAD
 			if ($i > 1) {
 				echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
-=======
-			if ( $i > 1 ) {
-				#echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
->>>>>>> Thong#Module2
 			}
 			the_post();
 

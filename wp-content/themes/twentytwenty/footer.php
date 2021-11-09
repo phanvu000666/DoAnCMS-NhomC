@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The template for displaying the footer
  *
@@ -13,47 +12,54 @@
  */
 
 ?>
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+			<footer id="site-footer" role="contentinfo" class="header-footer-group">
 
-<!-- Footer -->
-	<section id="footer">
-		<div class="container">
-			<div class="row text-center text-xs-center text-sm-left text-md-left">
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4">
-				
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4">
-				
-				</div>
-			</div>
-			<div class="row">
-				
-				<hr>
-			</div>	
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-					<p><u><a href="" >National Transaction Corporation</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
-					<p class="h6">© All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
-				</div>
-				<hr>
-			</div>	
-		</div>
-	</section>
-	<!-- ./Footer -->
+				<div class="section-inner">
 
-<?php wp_footer(); ?>
+					<div class="footer-credits">
 
-</body>
+						<p class="footer-copyright">&copy;
+							<?php
+							echo date_i18n(
+								/* translators: Copyright date format, see https://www.php.net/manual/datetime.format.php */
+								_x( 'Y', 'copyright date format', 'twentytwenty' )
+							);
+							?>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+						</p><!-- .footer-copyright -->
 
+						<p class="powered-by-wordpress">
+							<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentytwenty' ) ); ?>">
+								<?php _e( 'Powered by WordPress', 'twentytwenty' ); ?>
+							</a>
+						</p><!-- .powered-by-wordpress -->
+
+					</div><!-- .footer-credits -->
+
+					<a class="to-the-top" href="#site-header">
+						<span class="to-the-top-long">
+							<?php
+							/* translators: %s: HTML character for up arrow. */
+							printf( __( 'To the top %s', 'twentytwenty' ), '<span class="arrow" aria-hidden="true">&uarr;</span>' );
+							?>
+						</span><!-- .to-the-top-long -->
+						<span class="to-the-top-short">
+							<?php
+							/* translators: %s: HTML character for up arrow. */
+							printf( __( 'Up %s', 'twentytwenty' ), '<span class="arrow" aria-hidden="true">&uarr;</span>' );
+							?>
+						</span><!-- .to-the-top-short -->
+					</a><!-- .to-the-top -->
+
+				</div><!-- .section-inner -->
+
+			</footer><!-- #site-footer -->
+
+		<?php wp_footer(); ?>
+
+	</body>
 </html>
 <!-- jQuery library -->
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
