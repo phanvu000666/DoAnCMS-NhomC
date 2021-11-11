@@ -58,4 +58,5 @@ if ( $next_post || $prev_post ) {
 	</nav><!-- .pagination-single -->
 
 	<?php
+	
 }
