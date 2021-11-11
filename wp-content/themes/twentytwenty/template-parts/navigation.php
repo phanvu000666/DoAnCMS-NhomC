@@ -43,7 +43,6 @@ if ($next_post || $prev_post) {
 						<span class="title"><span class="title-inner"><?php echo wp_kses_post(get_the_title($prev_post->ID)); ?></span></span>
 					</a>                    </div>
             </li>
-			<br>
 			<?php
 			}
 			if ($next_post) {
