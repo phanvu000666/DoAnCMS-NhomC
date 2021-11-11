@@ -56,6 +56,6 @@ if ( $next_post || $prev_post ) {
 		<hr class="styled-separator is-style-wide" aria-hidden="true" />
 
 	</nav><!-- .pagination-single -->
-
+  
 	<?php
 }
