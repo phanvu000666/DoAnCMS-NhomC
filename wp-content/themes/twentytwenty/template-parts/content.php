@@ -76,5 +76,4 @@
 		<?php
 	}
 	?>
-
 </article><!-- .post -->
