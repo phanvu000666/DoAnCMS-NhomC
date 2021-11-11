@@ -404,7 +404,17 @@ function twentytwenty_sidebar_registration() {
 			)
 		)
 	);
-
+	// Footer #2.
+	register_sidebar(
+		array_merge(
+			$shared_args,
+			array(
+				'name'        => __( 'Footer #2', 'twentytwenty' ),
+				'id'          => 'sidebar-2',
+				'description' => __( 'Widgets in this area will be displayed in the second column in the footer.', 'twentytwenty' ),
+			)
+		)
+	);
 	// Footer #3.
 	register_sidebar(
 		array_merge(
@@ -416,26 +426,13 @@ function twentytwenty_sidebar_registration() {
 			)
 		)
 	);
-
-	// Module #9.
+	// Footer #4.
 	register_sidebar(
 		array_merge(
 			$shared_args,
 			array(
-				'name'        => __( 'Module #9', 'twentytwenty' ),
-				'id'          => 'sidebar-9',
-				'description' => __( 'Widgets in this area will be displayed in the second column in the footer.', 'twentytwenty' ),
-			)
-		)
-	);
-
-	// Module #10.
-	register_sidebar(
-		array_merge(
-			$shared_args,
-			array(
-				'name'        => __( 'Module #10', 'twentytwenty' ),
-				'id'          => 'sidebar-10',
+				'name'        => __( 'Footer #4', 'twentytwenty' ),
+				'id'          => 'sidebar-4',
 				'description' => __( 'Widgets in this area will be displayed in the second column in the footer.', 'twentytwenty' ),
 			)
 		)
@@ -821,18 +818,4 @@ function twentytwenty_get_elements_array() {
 	 * @param array Array of elements.
 	 */
 	return apply_filters( 'twentytwenty_get_elements_array', $elements );
-}
-function catch_that_image()
-{
-	global $post, $posts;
-	$first_img = '';
-	ob_start();
-	ob_end_clean();
-	$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
-	$first_img = $matches[1][0];
-
-	if (empty($first_img)) { //Defines a default image
-		$first_img = "/images/default.jpg"; //Duong dan anh mac dinh khi khong tim duoc anh dai dien
-	}
-	return $first_img;
 }
