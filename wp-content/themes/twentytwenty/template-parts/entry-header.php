@@ -110,7 +110,6 @@ if (is_single()) {
                             <?php echo $year ?>
                         </div>
                     </div>
-                    <br><br>
                     <?php } ?>
                     <hr width="100%" class="hr-detail" style="text-align: center;" />
                     <?php
